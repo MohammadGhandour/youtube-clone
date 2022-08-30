@@ -1,0 +1,7 @@
+.search-feed-page {
+    padding-inline: var(--padding4);
+}
+
+.search-feed-page h1 {
+    padding-bottom: var(--padding3);
+}

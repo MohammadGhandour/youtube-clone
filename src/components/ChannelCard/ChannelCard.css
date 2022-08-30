@@ -1,0 +1,22 @@
+.channel-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+.channel-card-img {
+    width: 200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    outline: 2px solid var(--light);
+}
+
+.channel-infos-wrapper {
+    gap: var(--padding2);
+}
+
+.cursor-normal {
+    cursor: default;
+}

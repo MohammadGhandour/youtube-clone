@@ -1,0 +1,21 @@
+.feed {
+    display: flex;
+}
+
+.feed-content {
+    width: calc(100% - 200px);
+    margin-left: 200px;
+    padding: var(--padding4) var(--padding4) 0 var(--padding4);
+    transition: var(--transition);
+}
+
+.feed-content h1 {
+    padding-bottom: var(--padding4);
+}
+
+@media screen and (max-width: 1024px) {
+    .feed-content {
+        width: 100%;
+        margin-left: 0;
+    }
+}

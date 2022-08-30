@@ -1,0 +1,144 @@
+.video-page {
+    padding-top: calc(9vh + var(--padding4));
+    padding-inline: calc(var(--padding6) * 2);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--padding4);
+    transition: var(--transition);
+}
+
+.player-wrapper {
+    position: relative;
+    padding-top: 56.25%;
+}
+
+.react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* RELATED VIDEOS GRID */
+.related-videos-wrapper {
+    position: relative;
+}
+
+.related-videos-grid {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: var(--padding4);
+}
+
+.related-videos-grid div {
+    width: 100%;
+}
+
+.related-videos-video-card {
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+}
+
+.related-videos-video-card .thumbnail {
+    width: 150px;
+    aspect-ratio: 16/9 !important;
+}
+
+.related-videos-video-card .card-body {
+    padding: var(--padding2);
+}
+
+
+/* CHANNEL INFOS VIDEO */
+.video-infos {
+    padding-inline: var(--padding);
+    padding-block: var(--padding);
+}
+
+#stats {
+    border-bottom: 1px solid var(--light);
+}
+
+#stats h3 {
+    font-size: 16px;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: var(--padding3);
+}
+
+.stats h4 i {
+    margin-right: var(--padding);
+}
+
+.views {
+    color: var(--light);
+}
+
+.share-video {
+    cursor: pointer;
+}
+
+.channel-logo {
+    width: 50px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.channel-info-description {
+    padding-block: var(--padding2);
+}
+
+.channel-info-description a {
+    text-decoration: none;
+}
+
+.channel-info-description h3 {
+    color: var(--primary);
+}
+
+.description {
+    white-space: pre-line;
+}
+
+@media screen and (max-width: 1200px) {
+    .video-page {
+        padding-inline: var(--padding6);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* .related-videos-grid {
+        overflow-y: scroll;
+        position: sticky;
+        right: 0;
+        height: 91vh;
+    } */
+}
+
+@media screen and (max-width: 1024px) {
+    .video-page {
+        padding-inline: var(--padding6);
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .video-page {
+        padding-inline: 0;
+    }
+
+    .related-videos-video-card {
+        flex-direction: column;
+    }
+
+    .related-videos-video-card .thumbnail {
+        width: 100%;
+    }
+}
